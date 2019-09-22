@@ -4,83 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Prashanth's Personal Site</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="favicon.ico" />
+    <title>Prashanth Ashok Ramkumar</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200i|Open+Sans:300|Roboto:300&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/58709d6169.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <table cellspacing="20px">
-      <tr>
-        <td>
-          <img src="images/prashanth.jpg" alt="Prashanth's Profile Picture" />
-        </td>
-        <td>
-          <h1>Prashanth Ashok Ramkumar</h1>
-          <p><em>Software Engineer and Husband</em></p>
-          <p>
-            I am an aspiring full stack developer, re-learning how to code
-            websites. I was formerly a business analyst and project manager.
-          </p>
-          <p>
-            I 💖 travelling and spending time with my wife. I also 💚
-            <a href="https://www.nintendo.com/" target="_blank">video games</a>.
-          </p>
-        </td>
-      </tr>
-    </table>
-
-    <h3>Skills</h3>
-
-    <table cellspacing="10px">
-      <tr>
-        <td>Javascript</td>
-        <td>⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>HTML</td>
-        <td>⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>CSS</td>
-        <td>⭐</td>
-      </tr>
-      <tr>
-        <td>C#</td>
-        <td>⭐⭐⭐</td>
-      </tr>
-    </table>
-
-    <hr />
-
-    <h3>Work Experience</h3>
-    <table cellspacing="10px">
-      <thead>
-        <tr>
-          <th>Dates</th>
-          <th>Work</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>04/2018 - Present</td>
-          <td>Application Developer at Morgan Stanley</td>
-        </tr>
-        <tr>
-          <td>02/2016 - 04/2018</td>
-          <td>Business Analyst and Project Manager at Morgan Stanley</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <hr />
-
-    <h3>Education</h3>
-    <ul>
-      <li>Stevens Institute of Technology</li>
-      <li>Rajalakshmi Engineering College - Anna University</li>
-    </ul>
-
-    <hr />
-
-    <a href="hobbies.html">My Hobbies</a>
-    <a href="contact.html">Contact Me</a>
+    <nav id="navbar" name="navbar">
+      <ul class="nav-items">
+        <li class="nav-item">
+          <a href="#" class="nav-item-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-item-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-item-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="container">
+      <section id="welcome-section" name="welcome">
+        <h1>Hi there! My name is Prashanth</h1>
+        <br />
+        <h2>a software developer and husband.</h2>
+      </section>
+      <!--<section id="projects" name="projects">
+          <div class="project-tile">
+            <div class="project-thumbnail">
+              <a href="https://prashanthashok.github.io/parknews/" target="_blank"
+                ><img
+                  src="https://i.imgur.com/MskUFKh.png?1"
+                  alt="Image of PARK News"
+              /></a>
+            </div>
+            <div class="project-title">PARK News</div>
+          </div>
+          <div class="project-tile">
+            <div class="project-thumbnail"></div>
+            <div class="project-title"></div>
+          </div>
+          <div class="project-tile">
+            <div class="project-thumbnail"></div>
+            <div class="project-title"></div>
+          </div>
+        </section>-->
+      <section id="projects" name="projects">
+        <div class="projects-grid">
+          <div class="project-tile">
+            <a  href="https://prashanthashok.github.io/parknews/" target="_blank"
+                ><img src="https://i.imgur.com/MskUFKh.png?1"
+                  alt="Image of PARK News"
+              />
+              <span class="project-title"><p>PARK News</p></span>
+          </a>
+          </div>
+          
+        </div>
+      </section>
+      <section id="contact" name="contact">
+        <p class="contact-title">Would you like to work together?</p> <br />
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/prashanth-ashokram" class="contact-link" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+          LinkedIn
+          </a>
+        <a href="https://github.com/prashanthashok" class="contact-link" target="_blank">
+        <i class="fab fa-github"></i>
+          GitHub
+          </a>
+        <a href="https://twitter.com/FizzBurn11773" class="contact-link" target="_blank">
+        <i class="fab fa-twitter"></i>
+          Twitter
+          </a>
+        <a href="mailto:prashanth.ashokram@gmail.com" class="contact-link" target="_blank">
+        <i class="fab fa-github"></i>
+          Email
+          </a>
+        </div>
+        
+      </section>
+      <footer class="footer">
+        <p> Sample Footer Text</p>
+      </footer>
+    </main>
   </body>
 </html>
